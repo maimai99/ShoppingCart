@@ -13,10 +13,10 @@
 		D31A33191E80BA4E00AACB5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31A33171E80BA4E00AACB5F /* Main.storyboard */; };
 		D31A331B1E80BA4E00AACB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31A331A1E80BA4E00AACB5F /* Assets.xcassets */; };
 		D31A331E1E80BA4E00AACB5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31A331C1E80BA4E00AACB5F /* LaunchScreen.storyboard */; };
-		D31A33271E80BFE900AACB5F /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A33261E80BFE900AACB5F /* FirstTableViewController.m */; };
 		D31A33301E80C15A00AACB5F /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A332F1E80C15A00AACB5F /* ItemViewController.m */; };
 		D31A33331E80C16C00AACB5F /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A33321E80C16C00AACB5F /* InputViewController.m */; };
 		D31A33361E80C2CD00AACB5F /* FirstTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A33351E80C2CD00AACB5F /* FirstTableView.m */; };
+		D3B836B21E80C53F00048F7B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B836B11E80C53F00048F7B /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +30,14 @@
 		D31A331A1E80BA4E00AACB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D31A331D1E80BA4E00AACB5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D31A331F1E80BA4E00AACB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D31A33251E80BFE900AACB5F /* FirstTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
-		D31A33261E80BFE900AACB5F /* FirstTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
 		D31A332E1E80C15A00AACB5F /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		D31A332F1E80C15A00AACB5F /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		D31A33311E80C16C00AACB5F /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
 		D31A33321E80C16C00AACB5F /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 		D31A33341E80C2CD00AACB5F /* FirstTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableView.h; sourceTree = "<group>"; };
 		D31A33351E80C2CD00AACB5F /* FirstTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableView.m; sourceTree = "<group>"; };
+		D3B836B01E80C53F00048F7B /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D3B836B11E80C53F00048F7B /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +70,9 @@
 		D31A330D1E80BA4E00AACB5F /* ShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				D3B836B01E80C53F00048F7B /* FirstViewController.h */,
+				D3B836B11E80C53F00048F7B /* FirstViewController.m */,
 				D31A33111E80BA4E00AACB5F /* AppDelegate.h */,
-				D31A33251E80BFE900AACB5F /* FirstTableViewController.h */,
-				D31A33261E80BFE900AACB5F /* FirstTableViewController.m */,
 				D31A33121E80BA4E00AACB5F /* AppDelegate.m */,
 				D31A33141E80BA4E00AACB5F /* ViewController.h */,
 				D31A33151E80BA4E00AACB5F /* ViewController.m */,
@@ -170,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31A33271E80BFE900AACB5F /* FirstTableViewController.m in Sources */,
 				D31A33161E80BA4E00AACB5F /* ViewController.m in Sources */,
 				D31A33131E80BA4E00AACB5F /* AppDelegate.m in Sources */,
+				D3B836B21E80C53F00048F7B /* FirstViewController.m in Sources */,
 				D31A33301E80C15A00AACB5F /* ItemViewController.m in Sources */,
 				D31A33101E80BA4E00AACB5F /* main.m in Sources */,
 				D31A33361E80C2CD00AACB5F /* FirstTableView.m in Sources */,
@@ -331,6 +331,7 @@
 				D31A33241E80BA4E00AACB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
