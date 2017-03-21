@@ -10,6 +10,10 @@
 
 @interface FirstViewController ()
 
+@property (strong,nonatomic) NSArray<NSString*>* textLabels;
+@property (strong,nonatomic) NSArray<NSString*>* icons;
+
+
 @end
 
 @implementation FirstViewController
@@ -20,6 +24,8 @@
     
     self.firstTableView.delegate = self;
     self.firstTableView.dataSource = self;
+    self.textLabels = @[@"FOODS",@"DRINKS",@"CLOTHES"];
+    self.icons = @[@"food",@"coffee",@"cloth"];
     
 }
 
@@ -29,9 +35,13 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView*)tableView
-        cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+        cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    // indexPath.section sectionのインデックス番号
+    // indexPath.row rowのインデックス番号
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FirstTableViewCell" forIndexPath:indexPath];
-    cell.textLabel.text = @"hogehoge";
+    cell.textLabel.text = self.textLabels[indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:self.icons[indexPath.row]];
+    
     return cell;
 }
 
