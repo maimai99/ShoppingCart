@@ -7,6 +7,7 @@
 //
 
 #import "InputViewController.h"
+#import "InputTableViewCell.h"
 
 @interface InputViewController ()
 
@@ -17,11 +18,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.inputTableView.delegate = self;
+    self.inputTableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    InputTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InputTableViewCell" forIndexPath:indexPath];
+    
+    if(!cell){
+        cell = [[InputTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"InputTableViewCell"];
+    }
+    
+    cell.InputTextField.text = @"hogehoge";
+    cell.inputLabel.text = @"hogehoge";
+    
+    return cell;
 }
 
 /*
