@@ -17,6 +17,12 @@
 		D31A33301E80C15A00AACB5F /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A332F1E80C15A00AACB5F /* ItemViewController.m */; };
 		D31A33331E80C16C00AACB5F /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A33321E80C16C00AACB5F /* InputViewController.m */; };
 		D31A33361E80C2CD00AACB5F /* FirstTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A33351E80C2CD00AACB5F /* FirstTableView.m */; };
+		D3AC390B1E8219C5001D32A9 /* NaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC390A1E8219C5001D32A9 /* NaviController.m */; };
+		D3AC39161E821A7D001D32A9 /* Cloth.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC390D1E821A7C001D32A9 /* Cloth.m */; };
+		D3AC39171E821A7D001D32A9 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC390F1E821A7C001D32A9 /* Drink.m */; };
+		D3AC39181E821A7D001D32A9 /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC39111E821A7C001D32A9 /* Food.m */; };
+		D3AC39191E821A7D001D32A9 /* Material.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC39131E821A7C001D32A9 /* Material.m */; };
+		D3AC391A1E821A7D001D32A9 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC39151E821A7D001D32A9 /* Product.m */; };
 		D3B836B21E80C53F00048F7B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B836B11E80C53F00048F7B /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +45,18 @@
 		D31A33321E80C16C00AACB5F /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 		D31A33341E80C2CD00AACB5F /* FirstTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableView.h; sourceTree = "<group>"; };
 		D31A33351E80C2CD00AACB5F /* FirstTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableView.m; sourceTree = "<group>"; };
+		D3AC39091E8219C5001D32A9 /* NaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviController.h; sourceTree = "<group>"; };
+		D3AC390A1E8219C5001D32A9 /* NaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviController.m; sourceTree = "<group>"; };
+		D3AC390C1E821A7C001D32A9 /* Cloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloth.h; sourceTree = "<group>"; };
+		D3AC390D1E821A7C001D32A9 /* Cloth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cloth.m; sourceTree = "<group>"; };
+		D3AC390E1E821A7C001D32A9 /* Drink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drink.h; sourceTree = "<group>"; };
+		D3AC390F1E821A7C001D32A9 /* Drink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drink.m; sourceTree = "<group>"; };
+		D3AC39101E821A7C001D32A9 /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		D3AC39111E821A7C001D32A9 /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		D3AC39121E821A7C001D32A9 /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		D3AC39131E821A7C001D32A9 /* Material.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Material.m; sourceTree = "<group>"; };
+		D3AC39141E821A7C001D32A9 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		D3AC39151E821A7D001D32A9 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		D3B836B01E80C53F00048F7B /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		D3B836B11E80C53F00048F7B /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +98,8 @@
 				D31A33141E80BA4E00AACB5F /* ViewController.h */,
 				D31A33151E80BA4E00AACB5F /* ViewController.m */,
 				D31A33171E80BA4E00AACB5F /* Main.storyboard */,
+				D3AC39091E8219C5001D32A9 /* NaviController.h */,
+				D3AC390A1E8219C5001D32A9 /* NaviController.m */,
 				D31A33341E80C2CD00AACB5F /* FirstTableView.h */,
 				D31A33351E80C2CD00AACB5F /* FirstTableView.m */,
 				D31A332E1E80C15A00AACB5F /* ItemViewController.h */,
@@ -88,6 +108,16 @@
 				D31A33321E80C16C00AACB5F /* InputViewController.m */,
 				D30501651E81F9D400DE0AB0 /* InputTableViewCell.h */,
 				D30501661E81F9D400DE0AB0 /* InputTableViewCell.m */,
+				D3AC390C1E821A7C001D32A9 /* Cloth.h */,
+				D3AC390D1E821A7C001D32A9 /* Cloth.m */,
+				D3AC390E1E821A7C001D32A9 /* Drink.h */,
+				D3AC390F1E821A7C001D32A9 /* Drink.m */,
+				D3AC39101E821A7C001D32A9 /* Food.h */,
+				D3AC39111E821A7C001D32A9 /* Food.m */,
+				D3AC39121E821A7C001D32A9 /* Material.h */,
+				D3AC39131E821A7C001D32A9 /* Material.m */,
+				D3AC39141E821A7C001D32A9 /* Product.h */,
+				D3AC39151E821A7D001D32A9 /* Product.m */,
 				D31A331A1E80BA4E00AACB5F /* Assets.xcassets */,
 				D31A331C1E80BA4E00AACB5F /* LaunchScreen.storyboard */,
 				D31A331F1E80BA4E00AACB5F /* Info.plist */,
@@ -175,12 +205,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3AC39161E821A7D001D32A9 /* Cloth.m in Sources */,
+				D3AC390B1E8219C5001D32A9 /* NaviController.m in Sources */,
+				D3AC39171E821A7D001D32A9 /* Drink.m in Sources */,
 				D31A33161E80BA4E00AACB5F /* ViewController.m in Sources */,
 				D31A33131E80BA4E00AACB5F /* AppDelegate.m in Sources */,
 				D30501671E81F9D400DE0AB0 /* InputTableViewCell.m in Sources */,
 				D3B836B21E80C53F00048F7B /* FirstViewController.m in Sources */,
+				D3AC391A1E821A7D001D32A9 /* Product.m in Sources */,
 				D31A33301E80C15A00AACB5F /* ItemViewController.m in Sources */,
+				D3AC39191E821A7D001D32A9 /* Material.m in Sources */,
 				D31A33101E80BA4E00AACB5F /* main.m in Sources */,
+				D3AC39181E821A7D001D32A9 /* Food.m in Sources */,
 				D31A33361E80C2CD00AACB5F /* FirstTableView.m in Sources */,
 				D31A33331E80C16C00AACB5F /* InputViewController.m in Sources */,
 			);

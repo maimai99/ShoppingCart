@@ -9,8 +9,12 @@
 #import "InputViewController.h"
 #import "InputTableViewCell.h"
 
+#import "Food.h"
+#import "NaviController.h"
+
 @interface InputViewController ()
 
+@property (strong,nonatomic) Product *item;
 @property (strong,nonatomic) NSArray<NSString*>* textFieldForInput;
 @property (strong,nonatomic) NSArray<NSString*>* labelForInput;
 
@@ -55,6 +59,28 @@
     cell.inputLabel.text = self.labelForInput[indexPath.row];
     
     return cell;
+}
+- (IBAction)buttonClicked:(id)sender {
+    //navi controllerのitemに代入したい
+    NSIndexPath *indexPath;
+    InputTableViewCell *cell;
+    NSMutableArray<NSString*>* userInputData = [[NSMutableArray<NSString*> alloc]init];
+    
+    for(int i = 0;i < self.labelForInput.count;i++){
+        
+        indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+        cell = [self.inputTableView cellForRowAtIndexPath:indexPath];
+
+
+        [userInputData addObject:cell.InputTextField.text];
+        
+    }
+    
+    
+    // ひとつずつ値を代入したい
+//    self.item = [Food alloc]initWithFoodID:arr[0] foodName:<#(NSString *)#> foodPrice:<#(float)#> foodCalorie:<#(int)#> foodMadeInCountry:<#(NSString *)#> foodIngredients:<#(NSArray<NSString *> *)#> foodSize:<#(int)#>
+//    
+//    [((NaviController*)(self.navigationController)).items addObject:self.item];
 }
 
 /*

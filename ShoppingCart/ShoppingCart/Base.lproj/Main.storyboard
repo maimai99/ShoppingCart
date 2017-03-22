@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1936.8" y="375.56221889055473"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navi Controller-->
         <scene sceneID="edf-1S-xpQ">
             <objects>
-                <navigationController id="6JF-rX-Qsn" sceneMemberID="viewController">
+                <navigationController id="6JF-rX-Qsn" customClass="NaviController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kUQ-p0-1QT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -238,6 +238,9 @@
                                 <state key="normal" title="Done!">
                                     <color key="titleColor" red="1" green="0.36922164159999998" blue="0.33892961970000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="70e-dq-f0G" eventType="touchUpInside" id="g6H-WO-k3N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
