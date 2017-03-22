@@ -11,6 +11,9 @@
 
 @interface InputViewController ()
 
+@property (strong,nonatomic) NSArray<NSString*>* textFieldForInput;
+@property (strong,nonatomic) NSArray<NSString*>* labelForInput;
+
 @end
 
 @implementation InputViewController
@@ -21,6 +24,8 @@
     
     self.inputTableView.delegate = self;
     self.inputTableView.dataSource = self;
+    self.textFieldForInput = @[@"234",@"Chicken",@"100",@"5",@"250",@"chicken,salt"];
+    self.labelForInput = @[@"Food ID",@"Food Name",@"Food Size",@"Food Price",@"Food Calorie",@"Food Ingredient"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,7 +40,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 1;
+    return 6;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -46,8 +51,8 @@
         cell = [[InputTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"InputTableViewCell"];
     }
     
-    cell.InputTextField.text = @"hogehoge";
-    cell.inputLabel.text = @"hogehoge";
+    cell.InputTextField.text = self.textFieldForInput[indexPath.row];
+    cell.inputLabel.text = self.labelForInput[indexPath.row];
     
     return cell;
 }
