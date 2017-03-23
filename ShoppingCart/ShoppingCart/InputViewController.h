@@ -13,6 +13,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UITableView *inputTableView;
+@property NSInteger indexPathRow;
 
 
 @end

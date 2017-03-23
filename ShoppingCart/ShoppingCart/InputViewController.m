@@ -8,7 +8,7 @@
 
 #import "InputViewController.h"
 #import "InputTableViewCell.h"
-
+#import "FirstViewController.h"
 #import "Food.h"
 #import "Drink.h"
 #import "Cloth.h"
@@ -19,6 +19,7 @@
 @property (strong,nonatomic) Product *item;
 @property (strong,nonatomic) NSArray<NSString*>* textFieldForInput;
 @property (strong,nonatomic) NSArray<NSString*>* labelForInput;
+
 
 @end
 
@@ -79,14 +80,33 @@
     }
     
     
+    
+    
     // ひとつずつ値を代入したい
     // あとでdrinkとか分岐つくる
-    self.item = [[Food alloc]initWithFoodID:234
-                                   foodName:@"chicken"
-                                  foodPrice:3.0
-                                foodCalorie:400 foodMadeInCountry:@"Canada"
-                            foodIngredients:@[@"chicken",@"salt"]
-                                   foodSize:100];
+    if(self.indexPathRow == 0){
+        
+        self.item = [[Food alloc]initWithFoodID:234
+                                       foodName:@"chicken"
+                                      foodPrice:3.0
+                                    foodCalorie:400 foodMadeInCountry:@"Canada"
+                                foodIngredients:@[@"chicken",@"salt"]
+                                       foodSize:100];
+    }else if (self.indexPathRow == 1){
+    
+        self.item = [[Drink alloc]initWithDrinkID:345
+                                        drinkSize:100 drinkName:@"Pepshi"
+                                       drinkPrice:2.0
+                                      isDrinkDiet:YES
+                               drinkMadeInCountry:@"USA"];
+    }else{
+        
+        self.item = [[Cloth alloc]initWithClothID:456
+                                        clothName:@"Tshirts"
+                                       clothPrice:14.0
+                                   clothMaterials:@[@"Nylon",@"Cotton"]
+                               clothMadeInCountry:@"China"];
+    }
     
     
     [((NaviController*)(self.navigationController)).items addObject:self.item];

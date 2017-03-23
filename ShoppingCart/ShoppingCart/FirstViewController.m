@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import "NaviController.h"
+#import "InputViewController.h"
 
 @interface FirstViewController ()
 
@@ -89,14 +90,28 @@
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    // どのsequeか特定するためのif
+    if([segue.identifier isEqualToString:@"FirstToInputView"]){
+    
+        // view controller(次の画面)のinstance
+        InputViewController *controller = [segue destinationViewController];
+        
+        // senderをUITableView形式にキャスティングして代入
+        UITableViewCell *cell = (UITableViewCell*)sender;
+        
+        // self.firstTableView内から上の*cellにマッチするcellのindexPathを代入する
+        NSIndexPath *indexPath = [self.firstTableView indexPathForCell:cell];
+        
+        // indexPathのrowを代入　＝　foodかdrinkかclothかって番号
+        controller.indexPathRow = indexPath.row;
+    }
+    
+    
 }
-*/
+
 
 @end
