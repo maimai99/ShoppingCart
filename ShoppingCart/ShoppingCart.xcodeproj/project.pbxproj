@@ -16,6 +16,7 @@
 		D31A33301E80C15A00AACB5F /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A332F1E80C15A00AACB5F /* ItemViewController.m */; };
 		D31A33331E80C16C00AACB5F /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A33321E80C16C00AACB5F /* InputViewController.m */; };
 		D31A33361E80C2CD00AACB5F /* FirstTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31A33351E80C2CD00AACB5F /* FirstTableView.m */; };
+		D360BC0C1E83858C00170DD6 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D360BC0B1E83858C00170DD6 /* ItemTableViewCell.m */; };
 		D3AC390B1E8219C5001D32A9 /* NaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC390A1E8219C5001D32A9 /* NaviController.m */; };
 		D3AC39161E821A7D001D32A9 /* Cloth.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC390D1E821A7C001D32A9 /* Cloth.m */; };
 		D3AC39171E821A7D001D32A9 /* Drink.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AC390F1E821A7C001D32A9 /* Drink.m */; };
@@ -42,6 +43,8 @@
 		D31A33321E80C16C00AACB5F /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 		D31A33341E80C2CD00AACB5F /* FirstTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableView.h; sourceTree = "<group>"; };
 		D31A33351E80C2CD00AACB5F /* FirstTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableView.m; sourceTree = "<group>"; };
+		D360BC0A1E83858C00170DD6 /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
+		D360BC0B1E83858C00170DD6 /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
 		D3AC39091E8219C5001D32A9 /* NaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviController.h; sourceTree = "<group>"; };
 		D3AC390A1E8219C5001D32A9 /* NaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviController.m; sourceTree = "<group>"; };
 		D3AC390C1E821A7C001D32A9 /* Cloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloth.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				D31A332F1E80C15A00AACB5F /* ItemViewController.m */,
 				D31A33311E80C16C00AACB5F /* InputViewController.h */,
 				D31A33321E80C16C00AACB5F /* InputViewController.m */,
+				D360BC0A1E83858C00170DD6 /* ItemTableViewCell.h */,
+				D360BC0B1E83858C00170DD6 /* ItemTableViewCell.m */,
 				D30501651E81F9D400DE0AB0 /* InputTableViewCell.h */,
 				D30501661E81F9D400DE0AB0 /* InputTableViewCell.m */,
 				D3AC390C1E821A7C001D32A9 /* Cloth.h */,
@@ -212,6 +217,7 @@
 				D31A33101E80BA4E00AACB5F /* main.m in Sources */,
 				D3AC39181E821A7D001D32A9 /* Food.m in Sources */,
 				D31A33361E80C2CD00AACB5F /* FirstTableView.m in Sources */,
+				D360BC0C1E83858C00170DD6 /* ItemTableViewCell.m in Sources */,
 				D31A33331E80C16C00AACB5F /* InputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

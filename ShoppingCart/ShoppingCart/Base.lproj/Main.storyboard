@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="JWs-rH-qZI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ItemTableViewCellID" selectionStyle="default" indentationWidth="10" rowHeight="72" id="JWs-rH-qZI" customClass="ItemTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JWs-rH-qZI" id="tcB-ji-ry5">
@@ -71,6 +71,13 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameOfProduct" destination="anq-ZE-81J" id="Ltw-5x-Uuc"/>
+                                            <outlet property="perPrice" destination="Qii-QM-lNU" id="rHf-xc-o3F"/>
+                                            <outlet property="price" destination="4wf-th-vxa" id="BA9-AC-gY6"/>
+                                            <outlet property="productImage" destination="HDV-p0-JPj" id="BSS-BV-j5n"/>
+                                            <outlet property="size" destination="ec5-TS-WR5" id="PWE-mX-aox"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="30" id="mAF-97-Jpb">
                                         <rect key="frame" x="0.0" y="100" width="375" height="30"/>
