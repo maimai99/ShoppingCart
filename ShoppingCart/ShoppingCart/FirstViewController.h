@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Product.h"
 
 
 @interface FirstViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *firstTableView;
+@property (strong,nonatomic) NSMutableArray<Product*>* items;
+
+-(void)showPrice;
 
 @end

@@ -7,11 +7,13 @@
 //
 
 #import "FirstViewController.h"
+#import "NaviController.h"
 
 @interface FirstViewController ()
 
 @property (strong,nonatomic) NSArray<NSString*>* textLabels;
 @property (strong,nonatomic) NSArray<NSString*>* icons;
+@property (weak, nonatomic) IBOutlet UILabel *totalPriceLabel;
 
 
 @end
@@ -33,6 +35,27 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    //取得＝箱に代入           //いんすたんす
+    self.items = ((NaviController*)(self.navigationController)).items;
+    [self showPrice];
+}
+
+-(void)showPrice{
+    
+    float totalPrice;
+    
+    for(int i = 0;i < self.items.count;i++){
+        
+        totalPrice += self.items[i].productPrice;
+    }
+    
+    self.totalPriceLabel.text = [NSString stringWithFormat:@"Total is%.2f",totalPrice];
+}
+
+
 
 -(UITableViewCell *)tableView:(UITableView*)tableView
         cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {

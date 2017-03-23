@@ -27,7 +27,7 @@
 
 
 
--(float)returnFoodPrice;
+-(float)returnProductPrice;
 
 
 

@@ -32,9 +32,6 @@
 }
 
 -(float)returnProductPrice{
-//    float price;
-//    price = self.productPrice * self.foodSize;
-//    return self.returnFoodPrice;
     
     return self.productPrice * self.foodSize;
 }

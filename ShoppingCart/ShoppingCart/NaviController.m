@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // initialize 箱作り
+    self.items = [[NSMutableArray alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {

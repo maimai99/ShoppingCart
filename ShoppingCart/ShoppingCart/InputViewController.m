@@ -10,6 +10,8 @@
 #import "InputTableViewCell.h"
 
 #import "Food.h"
+#import "Drink.h"
+#import "Cloth.h"
 #import "NaviController.h"
 
 @interface InputViewController ()
@@ -78,19 +80,31 @@
     
     
     // ひとつずつ値を代入したい
-//    self.item = [Food alloc]initWithFoodID:arr[0] foodName:<#(NSString *)#> foodPrice:<#(float)#> foodCalorie:<#(int)#> foodMadeInCountry:<#(NSString *)#> foodIngredients:<#(NSArray<NSString *> *)#> foodSize:<#(int)#>
-//    
-//    [((NaviController*)(self.navigationController)).items addObject:self.item];
+    // あとでdrinkとか分岐つくる
+    self.item = [[Food alloc]initWithFoodID:234
+                                   foodName:@"chicken"
+                                  foodPrice:3.0
+                                foodCalorie:400 foodMadeInCountry:@"Canada"
+                            foodIngredients:@[@"chicken",@"salt"]
+                                   foodSize:100];
+    
+    
+    [((NaviController*)(self.navigationController)).items addObject:self.item];
+    
+            // 独自メソッド                // 画面遷移の時アニメーションがつく
+    [[self navigationController] popViewControllerAnimated:YES];
+    
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ 
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//     Get the new view controller using [segue destinationViewController].
+//     Pass the selected object to the new view controller.
+//}
+
 
 @end
