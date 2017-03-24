@@ -17,9 +17,12 @@
 @interface InputViewController ()
 
 @property (strong,nonatomic) Product *item;
-@property (strong,nonatomic) NSArray<NSString*>* textFieldForInput;
-@property (strong,nonatomic) NSArray<NSString*>* labelForInput;
-
+@property (strong,nonatomic) NSArray<NSString*>* textFieldForInput1;
+@property (strong,nonatomic) NSArray<NSString*>* labelForInput1;
+@property (strong,nonatomic) NSArray<NSString*>* textFieldForInput2;
+@property (strong,nonatomic) NSArray<NSString*>* labelForInput2;
+@property (strong,nonatomic) NSArray<NSString*>* textFieldForInput3;
+@property (strong,nonatomic) NSArray<NSString*>* labelForInput3;
 
 @end
 
@@ -31,8 +34,16 @@
     
     self.inputTableView.delegate = self;
     self.inputTableView.dataSource = self;
-    self.textFieldForInput = @[@"234",@"Chicken",@"100",@"5",@"250",@"chicken,salt"];
-    self.labelForInput = @[@"Food ID",@"Food Name",@"Food Size",@"Food Price",@"Food Calorie",@"Food Ingredient"];
+    
+    self.textFieldForInput1 = @[@"234",@"Chicken",@"100",@"5.0",@"250",@"chicken,salt",@"Canada"];
+    self.labelForInput1 = @[@"Food ID",@"Food Name",@"Food Size",@"Food Price",@"Food Calorie",@"Food Ingredient",@"Made in Country"];
+    
+    self.textFieldForInput2 = @[@"345",@"Pepshi",@"150",@"2.0",@"YES",@"USA"];
+    self.labelForInput2 = @[@"Drink ID",@"Drink Name",@"Drink Size",@"Drink Price",@"Drink Diet",@"Made in Country"];
+    
+    self.textFieldForInput3 = @[@"456",@"T-Shirt",@"Nylon,Cotton",@"14.0",@"China"];
+    self.labelForInput3 = @[@"Cloth ID",@"Cloth Name",@"Cloth Price",@"Cloth Materials",@"Made in Country"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,19 +58,44 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 6;
+    if(self.indexPathRow == 0){
+        
+        return self.labelForInput1.count;
+        
+    }else if(self.indexPathRow == 1){
+        
+        return self.labelForInput2.count;
+        
+    }else{
+        
+        return self.labelForInput3.count;
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     InputTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"InputTableViewCell" forIndexPath:indexPath];
     
+    // cellがまだinitializeされてなかったらする
     if(!cell){
         cell = [[InputTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"InputTableViewCell"];
     }
     
-    cell.InputTextField.text = self.textFieldForInput[indexPath.row];
-    cell.inputLabel.text = self.labelForInput[indexPath.row];
+    if(self.indexPathRow == 0){
+                                                        //for使わなくてもインクリメントされて
+        cell.InputTextField.text = self.textFieldForInput1[indexPath.row];
+        cell.inputLabel.text = self.labelForInput1[indexPath.row];
+        
+    }else if(self.indexPathRow == 1){
+        
+        cell.InputTextField.text = self.textFieldForInput2[indexPath.row];
+        cell.inputLabel.text = self.labelForInput2[indexPath.row];
+        
+    }else{
+        
+        cell.InputTextField.text = self.textFieldForInput3[indexPath.row];
+        cell.inputLabel.text = self.labelForInput3[indexPath.row];
+    }
     
     return cell;
 }
@@ -69,7 +105,7 @@
     InputTableViewCell *cell;
     NSMutableArray<NSString*>* userInputData = [[NSMutableArray<NSString*> alloc]init];
     
-    for(int i = 0;i < self.labelForInput.count;i++){
+    for(int i = 0;i < (self.labelForInput1.count || self.labelForInput2 || self.labelForInput3);i++){
         
         indexPath = [NSIndexPath indexPathForRow:i inSection:0];
         cell = [self.inputTableView cellForRowAtIndexPath:indexPath];
@@ -79,9 +115,7 @@
         
     }
     
-    
-    
-    
+
     // ひとつずつ値を代入したい
     // あとでdrinkとか分岐つくる
     if(self.indexPathRow == 0){
@@ -102,7 +136,7 @@
     }else{
         
         self.item = [[Cloth alloc]initWithClothID:456
-                                        clothName:@"Tshirts"
+                                        clothName:@"T-Shirts"
                                        clothPrice:14.0
                                    clothMaterials:@[@"Nylon",@"Cotton"]
                                clothMadeInCountry:@"China"];

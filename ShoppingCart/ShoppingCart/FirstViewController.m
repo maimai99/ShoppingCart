@@ -53,7 +53,7 @@
         totalPrice += self.items[i].productPrice;
     }
     
-    self.totalPriceLabel.text = [NSString stringWithFormat:@"Total is%.2f",totalPrice];
+    self.totalPriceLabel.text = [NSString stringWithFormat:@"Total is $ %.2f",totalPrice];
 }
 
 

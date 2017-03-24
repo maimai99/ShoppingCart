@@ -13,6 +13,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UITableView *inputTableView;
+// 他のファイルに読み込ませたいpropertyをhファイルに書く
 @property NSInteger indexPathRow;
 
 
